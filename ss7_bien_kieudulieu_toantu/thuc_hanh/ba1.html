@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<script>
+    /*
+    let i = 10;
+    let f = 20.5;
+    let b = true;
+    let s = "Hà Nội";
+
+    document.write("i= "+i);
+    document.write("<br>");
+    document.write("f= "+f);
+    document.write("<br>");
+    document.write("b= "+b);
+    document.write("<br>");
+    document.write("s= "+s);
+    document.write("<br>");
+
+    let wight = 20;
+    let hight = 10;
+    let area = wight * hight;
+
+    document.write("area= "+area);
+
+    let a = prompt("Moi ban nhap a");
+    let b = prompt("Moi ban nhap b");
+    let c = a%b;
+    if (c == 0){
+        alert("A thuoc B")
+    } else {
+        alert("A khong thuoc B")
+    }
+*/
+    let a;
+    let b;
+    let c;
+    showmesage();
+
+
+    function showmesage() {
+        a = +prompt("moi ban nhap gia tri a");
+        b = +prompt("moi ban nhap gia tri b");
+        c = a % b;
+        notification();
+    }
+
+    function notification() {
+        if (c === 0) {
+            alert("A thuoc B")
+        } else {
+            alert("A khong thuoc B")
+        }
+    }
+</script>
+</body>
+</html>
