@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+    <script>
+        // let year = +prompt("Moi ban nhap nam");
+        // if (year % 4 == 0){
+        //     if (year % 100 == 0){
+        //         if (year % 400 == 0){
+        //             alert(year + " is a leap year")
+        //         } else  {
+        //             alert(year + " is not a leap year")
+        //         }
+        //     } else {
+        //         alert(year + " is a leap year")
+        //     }
+        // }else {
+        //     alert(year + " is a not leap year")
+        // }
+
+        let year = +prompt("Moi ban nhap nam");
+        let isleapyear = false;
+        if (year % 4 == 0) {
+            if (year % 100 == 0) {
+                if (year % 400 == 0) {
+                    isleapyear = true;
+                }
+            } else  {
+                isleapyear = true
+            }
+        }
+
+        if (isleapyear == true) {
+            alert(year + " Is a leap year")
+        } else {
+            alert(year + " Is not a leap year")
+        }
+    </script>
+</body>
+</html>

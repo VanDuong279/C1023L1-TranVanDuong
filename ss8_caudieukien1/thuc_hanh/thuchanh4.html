@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+    <script>
+        // let value = prompt("Enter browser name ?")
+        // if (value == "Edge") {
+        //     alert("You've got the Edge !")
+        // } else if(value == "Chrome" || value == "Firefox" || value == "Safari" || value == "Opera") {
+        //     alert("Okay support these browsers too")
+        // }else {
+        //     alert("We hope that this page looks ok")
+        // }
+
+        let browser = prompt("Enter browser name?")
+        switch (browser) {
+            case "Edge":
+                alert("You've got the Edge!")
+                break;
+            case "chrome":
+            case "firefox":
+            case "safari":
+            case "opera":
+                alert("okay support these browsers too")
+                break;
+            default:
+                alert("We hopr that this page looks too")
+        }
+    </script>
+</body>
+</html>
