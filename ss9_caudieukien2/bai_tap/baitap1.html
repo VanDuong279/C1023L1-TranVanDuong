@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<table cellspacing="12" cellpadding="12" border="1">
+    <thead>
+    <tr>
+        <th colspan="4"><input id="operator"></th>
+    </tr>
+    </thead>
+    <tbody>
+    <tr>
+        <td>
+            <button onclick="num(1)">1</button>
+        </td>
+        <td>
+            <button onclick="num(2)">2</button>
+        </td>
+        <td>
+            <button onclick="num(3)">3</button>
+        </td>
+        <td>
+            <button onclick="num('+')">+</button>
+        </td>
+    </tr>
+    <tr>
+        <td>
+            <button onclick="num(4)">4</button>
+        </td>
+        <td>
+            <button onclick="num(5)">5</button>
+        </td>
+        <td>
+            <button onclick="num(6)">6</button>
+        </td>
+        <td>
+            <button onclick="num('-')">-</button>
+        </td>
+    </tr>
+    <tr>
+        <td>
+            <button onclick="num(7)">7</button>
+        </td>
+        <td>
+            <button onclick="num(8)">8</button>
+        </td>
+        <td>
+            <button onclick="num(9)">9</button>
+        </td>
+        <td>
+            <button onclick="num('*')">x</button>
+        </td>
+    </tr>
+    <tr>
+        <td>
+            <button onclick="clear(result)">C</button>
+        </td>
+        <td>
+            <button onclick="num(0)">0</button>
+        </td>
+        <td>
+            <button onclick="equal()">=</button>
+        </td>
+        <td>
+            <button onclick="num('/')">/</button>
+        </td>
+    </tr>
+    </tbody>
+</table>
+<script>
+    let result = "";
+
+    function num(number) {
+        result += number;
+        document.getElementById("operator").value = result;
+    }
+
+    function equal() {
+        let finalResult = eval(result);
+        document.getElementById("operator").value = finalResult;
+    }
+
+    function clear() {
+        return 0;
+    }
+
+
+
+</script>
+</body>
+</html>
