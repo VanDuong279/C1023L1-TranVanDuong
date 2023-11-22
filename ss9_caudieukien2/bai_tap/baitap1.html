@@ -56,7 +56,7 @@
     </tr>
     <tr>
         <td>
-            <button onclick="clear()">C</button>
+            <button onclick="handleClear()">C</button>
         </td>
         <td>
             <button onclick="num(0)">0</button>
@@ -83,8 +83,8 @@
         document.getElementById("operator").value = finalResult;
     }
 
-    function clear() {
-        result.innerHTML = " ";
+    function handleClear() {
+        document.getElementById("operator").value = "";
     }
 
 
