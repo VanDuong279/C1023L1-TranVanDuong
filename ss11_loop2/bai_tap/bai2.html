@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+    <script>
+        let n = +prompt("Moi nhap n:" );
+        let giaiThua = 1;
+        if (n === 0 || n === 1){
+            giaiThua = 1;
+            document.write(giaiThua);
+        } else if (n>=2){
+            for (let i = 1; i <= n; i++){
+                giaiThua *= i;
+            }
+        }
+
+        document.write(giaiThua)
+    </script>
+</body>
+</html>

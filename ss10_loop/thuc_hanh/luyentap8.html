@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+    <script>
+        let phamVi = +prompt("Pham vi doan so tu 0->..")
+        let nhapSo = +prompt("Vui long nhap so")
+        if (phamVi){
+            let soRandom = Math.floor(Math.random()*phamVi);
+            if (soRandom === nhapSo){
+                alert("Chúc mừng bạn")
+            } else {
+                while (soRandom !== nhapSo){
+                    if (nhapSo < soRandom){
+                        alert("Vui long chon so lon hon")
+                        nhapSo = +prompt("Vui long nhap so")
+                    } else {
+                        alert("Vui long chon so nho hon")
+                        nhapSo = +prompt("Vui long nhap so")
+                    }
+                    alert("So dung la: "+soRandom)
+                    break;
+                }
+
+            }
+        }
+    </script>
+</body>
+</html>
