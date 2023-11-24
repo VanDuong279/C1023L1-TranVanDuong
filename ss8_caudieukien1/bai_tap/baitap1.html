@@ -6,8 +6,9 @@
 </head>
 <body>
     <script>
-        let weight = +prompt("Moi ban nhap can nang?")
-        let height = +prompt("Moi ban nhap chieu cao?")
+        let weight = +prompt("Moi ban nhap can nang?");
+        let height = +prompt("Moi ban nhap chieu cao?");
+        let BMI;
         BMI = weight / (height ^ 2) ;
         if (BMI < 18) {
             document.write("Underweight")

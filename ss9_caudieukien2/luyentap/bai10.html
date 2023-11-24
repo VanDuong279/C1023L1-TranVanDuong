@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+    <script>
+      let numberE = +prompt("Moi ban so dien");
+      if (numberE > 0 && numberE <= 100 ) {
+          price = numberE*500;
+          document.write("Gia tien: "+price);
+      } else if (numberE > 100 & numberE <= 200) {
+          price = 100*500 + (numberE - 100)*700;
+          document.write("Gia tien: "+price);
+      } else if (numberE > 200 && numberE <300) {
+          price = 100*500 + 100*700 +(numberE-200)*1000;
+          document.write("Gia tien: "+price);
+      } else {
+          price = 100*500 + 100*700 + 100*1000 + (numberE-300)*1200;
+          document.write("Gia tien: "+price);
+      }
+    </script>
+</body>
+</html>

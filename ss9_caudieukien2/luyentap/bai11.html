@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+    <script>
+        let luong = +prompt("Moi ban nhap luong?")
+        let thuong = +prompt("Moi ban nhap thuong?")
+        tongluong = luong+thuong;
+        if (tongluong < 9000000) {
+            document.write("So tien ban nhan duoc: "+tongluong)
+        } else if (tongluong < 15000000) {
+            price = tongluong * 0.1;
+            document.write("So tien ban nhan duoc: "+price)
+        } else {
+            price = tongluong *0.15;
+            document.write("So tien ban nhan duoc: "+price)
+        }
+    </script>
+</body>
+</html>

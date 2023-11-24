@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+    <script>
+        let minute = +prompt("Moi ban nhap so phut goi ?")
+        let phiCoDinh = 25000;
+        if (minute <= 10){
+          phi = phiCoDinh + (minute*600);
+          document.write("phi cuoc goi cua ban la: "+phi);
+        } else if (minute <= 20) {
+          phi = phiCoDinh + (10*600) +((minute - 10)*400);
+          document.write("phi cuoc goi cua ban la: "+phi);
+        } else {
+          phi = phiCoDinh + (10*600) +(20*400) +((minute - 20)*200);
+          document.write("phi cuoc goi cua ban la: "+phi)
+        }
+    </script>
+</body>
+</html>

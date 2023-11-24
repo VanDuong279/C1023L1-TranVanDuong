@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+    <script>
+        let a = +prompt("Input a");
+        let b = +prompt("Input b");
+        let c = +prompt("Input c");
+        delta = Math.pow(b,2) - 4*a*c;
+        if (delta === 0 ){
+            x= -b/2*a
+            document.write("Phuong trinh co nghiem kep " +x);
+        } else if (delta < 0) {
+            document.write("Phuong trinh vo nghiem")
+        } else {
+            x1= (-b + Math.sqrt(delta))/2*a;
+            x2= (-b - Math.sqrt(delta))/2*a;
+            document.write("Phuong trinh co 2 nghiem la "+x1+","+x2);
+        }
+    </script>
+</body>
+</html>

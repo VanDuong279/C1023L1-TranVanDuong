@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+    <script>
+        let soTien = +prompt("Nhập số tiền gửi ngân hàng");
+        let thang = +prompt("Nhập thời gian gửi ngân hàng theo tháng với lãi 4,1%/năm");
+        let tienLai = 0;
+        let tongTienLai = tienLai;
+        if(thang>1){
+            for (let i =1; i<=thang;i++){
+                tienLai = ((tongTienLai+soTien)*(4.1/12))/100
+                tongtienlai += tienLai
+                document.write("Số tiền lãi tháng "+i+" là "+tienlai.toFixed(2)+" VND<br>")
+            }
+        }
+        document.write(soTien);
+    </script>
+</body>
+</html>
