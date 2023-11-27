@@ -5,8 +5,49 @@
     <title>Title</title>
 </head>
 <body>
-    <script>
-        
-    </script>
+<script>
+    // /* Trường hợp 1:
+    // for (let i = 0; i< 5;i++){
+    //     for (let j= 0;j <= i;j++){
+    //         document.write("*")
+    //     }
+    //     document.write("<br>")
+    // }
+
+    // /* Trường hợp 2:
+    // for (let i = 5; i>0;i--){
+    //     for (let j= 1;j <= i;j++){
+    //         document.write("*")
+    //     }
+    //     document.write("<br>")
+    // }
+
+    // /* Trường hợp 3:
+    // for (let i = 1; i <= 5; i++){
+    //     for (let j =1  ; j <= 5; j++){
+    //         if (j <= 5-i){
+    //             console.log(" ")
+    //         }else  {
+    //             console.log("*")
+    //         }
+    //     }
+    //     console.log("<br>")
+    // }
+
+    /*
+    Trường họp 4:
+     */
+    const n = 5;
+    for (let i = 1; i <= n; i++) {
+        for (let j = 1; j <= n; j++) {
+            if (j <= i - 1) {
+                document.write(" ")
+            } else {
+                document.write("*")
+            }
+        }
+        document.write("<br>")
+    }
+</script>
 </body>
 </html>
