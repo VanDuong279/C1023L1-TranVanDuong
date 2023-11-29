@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+    <script>
+        // Bai1:
+        // let myColor= ["Red", "Green", "White", "Black"];
+        // console.log(myColor.join());
+        // console.log(myColor.toString())
+        // console.log(myColor.join("+"))
+
+
+        // Bai2:
+        // const num = window.prompt("Enter number: ");
+        // const arr = num.toString();
+        // const result = [arr[0]];
+        //
+        // for (let i = 0; i < arr.length ; i++){
+        //     if (arr[i-1] % 2 === 0 && arr[i] % 2 === 0){
+        //         result.push("-" ,arr[i]);
+        //     } else  {
+        //         result.push(arr[i]);
+        //     }
+        // }
+        // console.log(result.join(""));
+
+        //Bai3
+        let arr = prompt("Moi nhap chuoi:");
+        let UPPER = 'ABCDEFGHIJKLMNOPQRSTUVWXYZ';
+        let LOWER = 'abcdefghijklmnopqrstuvwxyz';
+        let result = [];
+
+        for (let i = 0; i < arr.length ; i++){
+            if (UPPER.indexOf(arr[i]) !== -1){
+                result.push(arr[i].toLowerCase())
+            } else if (LOWER.indexOf(arr[i]) !== -1){
+                result.push(arr[i].toUpperCase())
+            } else {
+                result.push(arr[i]);
+            }
+        }
+        alert(result.join(""))
+        </script>
+</body>
+</html>

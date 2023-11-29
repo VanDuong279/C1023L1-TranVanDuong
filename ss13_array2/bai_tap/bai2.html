@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+    <label>Nhập từ:</label>
+    <input type="text" id="tieng_anh">
+    <input type="button" value="Dịch"  onclick="dich()">
+    <p id="tieng_viet"></p>
+    <script>
+
+        let tiengAnh = document.getElementById("tieng_anh");
+        let arrA =["what","is","your","name"];
+        let arrB =["gì","là","của bạn","tên"];
+        let dem = 0;
+        document.write("Ban co the dich nhung tu nay: "+arrA);
+        function dich() {
+            for (let i = 0; i < arrA.length ; i++){
+                if (arrA[i] === tiengAnh.value){
+                    dem = 0;
+                    document.getElementById("tieng_viet").innerHTML = arrB[i];
+                    break;
+                } else {
+                    dem++
+                }
+            }
+        }
+
+    </script>
+</body>
+</html>
