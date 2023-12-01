@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<script>
+    let mang1 = [21, 314, 123, 124, 12, 1415, 72, 15, 128, 66];
+    let temp = 0;
+    for (let i = 0; i < mang1.length - 1; i++) {
+        for (let j = 0; j < mang1.length - i - 1 ; j++){
+            if (mang1[j]  > mang1[j+1] ){
+                temp = mang1[j];
+                mang1[j] = mang1[j+1];
+                mang1[j+1] = temp
+            }
+        }
+    }
+    console.log(mang1)
+</script>
+</body>
+</html>
