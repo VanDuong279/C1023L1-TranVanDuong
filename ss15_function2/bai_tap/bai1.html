@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<script>
+    let number = +prompt("Vui long nhap so can check: ");
+
+    function myMain() {
+        let count = 0;
+        let check = false;
+        for (let i = 0; i <= number; i++) {
+            if (number % i === 0) {
+                count += 1;
+            }
+        }
+        if (count === 2) {
+            check = true;
+        }
+        if (check) {
+            alert(number + " La so nguyen to")
+        } else {
+            alert(number + " Khong la so nguyen to")
+        }
+    }
+
+    myMain(number)
+</script>
+</body>
+</html>
