@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<script>
+
+    let a = +prompt("Vui long nhap a: ");
+    let b = +prompt("Vui long nhap b: ");
+    let c = +prompt("Vui long nhap c: ");
+    console.log(myMin())
+
+    function myMin() {
+        let min = 0;
+        if (a > b && b > c) {
+            min = c;
+        } else if (a < b && b < c) {
+            min = a;
+        } else {
+            min = b;
+        }
+
+        return min;
+    }
+</script>
+</body>
+</html>

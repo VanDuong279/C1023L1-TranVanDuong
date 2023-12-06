@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<script>
+    let mang = [];
+    for (let i = 0; i < 1; i++) {
+        for (let j = 0; j <= 4; j++) {
+            let input = prompt("Nhap phan tu cua mang");
+            mang.push(input)
+        }
+    }
+    console.log(mang);
+    let kyTu = prompt("Vui long nhap ki tu bat ki");
+    let kiemTra = myCheck(kyTu, mang)
+    if (kiemTra > 0) {
+        console.log("Co ki tu vua nhap trong mang");
+    } else {
+        console.log("Khong co ki tu trung khop");
+    }
+
+    function myCheck(kyTu, mang) {
+        let count = 0;
+        for (let i = 0; i < mang.length; i++) {
+            if (kyTu === mang[i]) {
+                count++;
+            }
+        }
+        if (count > 0) {
+            return count;
+        }
+        return -1;
+    }
+
+
+    // let mang = ['a', 'b', 'c', 'c', 'd', 'd', 'd', 'e', 'd', 'f']
+    // let kytu = prompt("Nhập vào 1 ký tự bất kỳ")
+    // document.write("Mảng gồm [" + mang + "]<br>")
+    // let kiemtra = kiemTraTrongMang(kytu, mang)
+    // if (kiemtra > 0) {
+    //     document.write("Có " + kiemtra + " ký tự " + kytu + " trong mảng")
+    // } else {
+    //     document.write("Không có dữ liệu trong mảng")
+    // }
+    //
+    // function kiemTraTrongMang(kytu, mang) {
+    //     let dem = 0
+    //     for (let i = 0; i < mang.length; i++) {
+    //         if (kytu == mang[i]) {
+    //             dem++
+    //         }
+    //     }
+    //     if (dem > 0) {
+    //         return dem
+    //     }
+    //     return -1
+    // }
+</script>
+</body>
+</html>

@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<script>
+    let n = +prompt('Vui long nhap so');
+    let giaiThua = 1;
+    console.log("Giai thua: " + myResult(n))
+
+    function myResult(n) {
+        if (n === 0 || n === 1) {
+            giaiThua = 1;
+        } else if (n >= 2) {
+            for (let i = 1; i <= n; i++) {
+                giaiThua *= i;
+            }
+        }
+        return giaiThua;
+    }
+</script>
+</body>
+</html>

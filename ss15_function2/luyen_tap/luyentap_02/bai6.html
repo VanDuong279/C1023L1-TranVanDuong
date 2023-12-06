@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<script>
+    let input = +prompt("Vui long nhap so: ");
+    console.log(myMain(input))
+
+    function myMain(input) {
+        let check = false
+        if (input == 0){
+            alert("vua la nguyen am vua la so nguyen duong")
+        }
+        check = input >= 1;
+        if (check) {
+            alert("La so nguyen duong")
+        } else {
+            alert("La so nguyen am")
+        }
+    }
+</script>
+</body>
+</html>
