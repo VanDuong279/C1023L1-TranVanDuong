@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<canvas id="canvas"></canvas>
+<script>
+    let Rectangle = function (dai, rong) {
+        this.chieuDai = dai;
+        this.chieuRong = rong;
+
+        this.setChieuDai = function (dai) {
+            this.chieuDai = dai;
+        };
+
+        this.setChieuRong = function (rong) {
+            this.chieuRong = rong;
+        };
+
+        this.getChieuDai = function () {
+            return this.chieuDai;
+        };
+
+        this.getChieuRong = function () {
+            return this.chieuRong;
+        };
+        this.getDienTich = function () {
+            return this.chieuDai * this.chieuRong;
+        };
+        this.getChuVi = function () {
+            return (this.chieuDai + this.chieuRong) * 2;
+        };
+    };
+
+    let hinhChuNhat = new Rectangle();
+    let setChieuDai = hinhChuNhat.setChieuDai(12);
+    let setChieuRong = hinhChuNhat.setChieuRong(20);
+    let chieu_dai = hinhChuNhat.getChieuDai();
+    let chieu_rong = hinhChuNhat.getChieuRong();
+    let dienTich = hinhChuNhat.getDienTich();
+    let chuVi = hinhChuNhat.getChuVi();
+    document.write("Chieu dai: " + chieu_dai + " " + "Chieu rong: " + chieu_rong + "</br>");
+    document.write("Dien Tich: " + dienTich + " " + "Chu vi: " + chuVi);
+
+    let canvas = document.getElementById("canvas");
+    document.write()
+</script>
+</body>
+</html>

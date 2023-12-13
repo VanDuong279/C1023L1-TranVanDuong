@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<script>
+    let Temperature = function (C) {
+        this.doC = C;
+        this.getDoC = function () {
+            return this.doC;
+        };
+
+        if (this.doC > -273) {
+            this.changeCtoF =  function () {
+                return (this.doC * 1.8) + 32;
+            }
+            this.changeCtoK =  function () {
+                return this.doC + 273.15;
+            }
+        } else {
+            alert("Nhiet do phai tren - 273 do C")
+        }
+    };
+    let inputC = +prompt('Vui long nhap nhiet do ');
+    let temperature = new Temperature(inputC);
+    let doC = temperature.getDoC();
+    let doF = temperature.changeCtoF();
+    let doK = temperature.changeCtoK();
+    document.write("C: " + doC + " " + "F: " +doF + " " + "K: " + doK);
+</script>
+</body>
+</html>
