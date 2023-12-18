@@ -21,11 +21,11 @@
         //     alert(year + " is a not leap year")
         // }
 
-        let year = +prompt("Moi ban nhap nam");
+        let yearOne = +prompt("Moi ban nhap nam");
         let isLeapYear = false;
-        if (year % 4 == 0) {
-            if (year % 100 == 0) {
-                if (year % 400 == 0) {
+        if (yearOne % 4 == 0) {
+            if (yearOne % 100 == 0) {
+                if (yearOne % 400 == 0) {
                     isLeapyear = true;
                 }
             } else  {
@@ -34,9 +34,9 @@
         }
 
         if (isLeapYear == true) {
-            alert(year + " Is a leap year")
+            alert(yearOne + " Is a leap year")
         } else {
-            alert(year + " Is not a leap year")
+            alert(yearOne + " Is not a leap year")
         }
     </script>
 </body>

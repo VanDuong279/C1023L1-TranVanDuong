@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<script>
+    class Mouse {
+        status;
+        sound_mouse;
+
+        constructor(name, weight, speed) {
+            this.name_mouse = name;
+            this.weight_mouse = weight;
+            this.speed_mouse = speed;
+        }
+
+        getStatus() {
+            if (this.status) {
+                alert("Chuột sống!")
+            } else {
+                alert("Chuột chết!")
+            }
+        }
+
+        noDie() {
+            return this.status = true;
+        }
+
+        die() {
+            return this.status = false;
+        }
+
+        soundMouse(sound) {
+            this.sound_mouse = sound
+            alert(this.sound_mouse = "Chít chít")
+        }
+    }
+
+    class Cat {
+        sound_cat
+        constructor(name, weight ,speed, mouse) {
+            this.name = name;
+            this.weight_cat = weight;
+            this.speed_cat = speed;
+            this.mouse = mouse;
+        }
+        getWeightCat() {
+            return this.weight_cat;
+        }
+        setSoundCat(sound_cat) {
+            this.sound_cat = sound_cat;
+        }
+        getSoundCat() {
+            this.setSoundCat();
+            return alert(this.sound_cat = "Meo Meo")
+        }
+        catchTheMouse() {
+            if (this.mouse.speed_mouse < this.speed_cat) {
+                alert("Meo da bat duoc chuot")
+            } else {
+                alert("Meo khong bat duoc chuot")
+            }
+        }
+
+        eatTheMouse() {
+            if (this.mouse.status) {
+                this.weight_cat = this.mouse.weight_mouse + this.weight_cat;
+                this.mouse.status = false;
+                alert("Chuot da bi meo an!!")
+
+            }
+        }
+    }
+    let Jerry = new Mouse("Jerry",20,100)
+    let Tom = new Cat("Tom",40,200,Jerry);
+
+    Jerry.noDie();
+    Jerry.soundMouse("chit chit")
+    Tom.catchTheMouse();
+    Tom.eatTheMouse();
+    console.log(Tom.getWeightCat())
+</script>
+</body>
+</html>

@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<script>
+    class Apple {
+        constructor(weight)  {
+            this.weight = weight;
+        }
+
+        getWeight() {
+            return this.weight;
+        }
+
+        setWeight(weight) {
+            this.weight = weight;
+        }
+
+        isEmpty() {
+            if (this.weight <= 0) {
+                return true;
+            } else {
+                return false;
+            }
+        }
+
+        decrease() {
+            if (this.isEmpty()) {
+                alert("Da an het tao r")
+            } else {
+                this.weight--;
+            }
+        }
+    }
+
+    class Human {
+        constructor(name, gender, weight) {
+            this.name = name;
+            this.gender = gender;
+            this.weight = weight;
+        }
+
+        getName() {
+            return this.name;
+        }
+
+        setName(name) {
+            this.name = name;
+        };
+
+        isMale() {
+            if (this.gender === 1) {
+                return true;
+            } else {
+                return false;
+            }
+        };
+
+        getMale() {
+            if (this.isMale()) {
+                return this.gender = "Male";
+            } else {
+                return this.gender = "Female";
+            }
+        };
+
+        setWeight(weight) {
+            this.weight = weight;
+        };
+
+        getWeight() {
+            return this.weight;
+        }
+
+        eat(apple) {
+            if (apple.getWeight() > 0) {
+                apple.decrease();
+                this.weight++;
+            } else {
+                return "Da het"
+            }
+        }
+
+        say(string) {
+            console.log(string);
+        }
+
+        checkApple(apple){
+            return apple.isEmpty();
+        }
+    }
+
+    let apple = new Apple(10)
+    let human1 = new Human("Adam",1,60)
+    let human2 = new Human("Eva",2,50)
+    human1.say("Adam </br>");
+    human2.say("Eva </br>");
+    while (apple.isEmpty() !== true) {
+        document.write("Adam an tao </br>");
+        human1.eat(apple);
+        document.write("Qua tao con: " + apple.getWeight() +"</br>");
+        document.write("Can nang cua Adam: " + human1.getWeight() +"</br>");
+        document.write("Eva an tao </br>");
+        human2.eat(apple);
+        document.write("Qua tao con: " + apple.getWeight() +"</br>");
+        document.write("Can nang cua Adam: " + human2.getWeight() +"</br>");
+    }
+
+</script>
+</body>
+</html>
