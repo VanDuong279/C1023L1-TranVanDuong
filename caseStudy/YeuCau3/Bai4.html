@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<script>
+    let menu = {
+        1: {name: "Cafe", price: 12000},
+        2: {name: "Cam vắt", price: 25000},
+        3: {name: "Nước ép cà rốt", price: 20000},
+        4: {name: "Nước ép cà chua", price: 20000},
+        5: {name: "Nước lọc", price: 10000},
+        6: {name: "Nước dừa", price: 15000}
+    }
+    console.log(menu)
+    for (let key in menu) {
+        console.log(key + ":" + menu[key].name);
+    }
+    let total = 0;
+    while (true) {
+        let select = +prompt("Vui lòng chọn loại nước: ");
+        if (select === 7) {
+            console.log("Thoát");
+            break;
+        } else {
+            if (menu[select]) {
+                let num = +prompt("Vui lòng nhập số lượng: ");
+                let tong = menu[select].price * num;
+                console.log("Bạn chọn" + menu[select].name + " Tổng tiền: " +tong)
+                total += tong
+            }
+        }
+    }
+    console.log(total)
+</script>
+</body>
+</html>

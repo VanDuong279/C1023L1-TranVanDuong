@@ -9,11 +9,11 @@
     let input = +prompt("Vui long nhap so tien: ");
     let tong = 0;
     if (input > 15000000) {
-        tong = input * 0.2;
+        tong = input - (input * 0.2);
     } else if (input > 7000000) {
-        tong = input * 0.1;
+        tong = input - (input * 0.1);
     } else {
-        tong = input * 0.05;
+        tong = input - (input * 0.05);
     }
     document.write("Tong so tien ban nhan duoc sau thue: " +tong)
 </script>

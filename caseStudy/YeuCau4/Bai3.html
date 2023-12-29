@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<script>
+    let s1 = "aabcc";
+    let s2 = "adcaa";
+    let arr1 = s1.split("").sort((a,b)=> a.localeCompare((b)));
+    let arr2 = s2.split("").sort((a,b)=> a.localeCompare((b)));
+    let count = 0;
+    for (let i = 0; i < arr1.length ; i++) {
+            if (arr1[i] === arr2[i]) {
+                count++;
+            }
+    }
+    console.log(count)
+</script>
+</body>
+</html>
